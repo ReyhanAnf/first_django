@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ judul }}</title>
+</head>
+<body>
+  {% block content %}
+<div class="content container bg-body-tertiary card my-3">
+    <h1 class="text-center mx-auto">{{ sapaan }}</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto veritatis sapiente voluptatibus repellat atque, consectetur a! Ullam, error? Nam voluptatem temporibus hic quod, consequuntur quis voluptates eveniet officiis fugiat accusantium minima quidem omnis placeat inventore voluptatibus perferendis culpa ea! Quos?
+    </p>
+
+    <a class="btn btn-primary mt-3 w-25 align-self-center" href={% url 'login' %} role="button" aria-expanded="false" aria-controls="collapseExample">
+      LOGIN
+    </a>
+</div>
+  {% endblock content %}
+</body>
+</html>

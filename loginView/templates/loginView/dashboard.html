@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ judul }}</title>
+</head>
+<body>
+  {% block content %}
+<div class="content container bg-body-tertiary card my-3">
+    <h1 class="text-center mx-auto">Selamat Datang {{ request.user }}</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto veritatis sapiente voluptatibus repellat atque, consectetur a! Ullam, error? Nam voluptatem temporibus hic quod, consequuntur quis voluptates eveniet officiis fugiat accusantium minima quidem omnis placeat inventore voluptatibus perferendis culpa ea! Quos?
+    </p>
+    <p class="d-inline-flex gap-1">
+      <a class="btn boder border-primary-subtle" href="#reyhananf7" role="button" aria-expanded="false" aria-controls="collapseExample">
+        email: {{ request.user.email}}
+      </a>
+      <a class="btn boder border-primary-subtle" href="#085871235944" role="button" aria-expanded="false" aria-controls="collapseExample">
+        First name: {{ request.user.first_name }}
+      </a>
+      <a class="btn btn-danger" href={% url 'logout' %} role="button" aria-expanded="false" aria-controls="collapseExample">
+        LOGOUT
+      </a>
+    </p>
+
+</div>
+  {% endblock content %}
+</body>
+</html>

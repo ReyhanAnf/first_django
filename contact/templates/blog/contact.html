@@ -1,0 +1,23 @@
+{% extends "../base.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ judul }}</title>
+</head>
+<body>
+  {% block content %}
+    <div class="content container my-3">
+      <p class="d-inline-flex gap-1">
+        <a class="btn boder border-primary-subtle" href="#reyhananf7" role="button" aria-expanded="false" aria-controls="collapseExample">
+          email: {{gmail}}
+        </a>
+        <a class="btn boder border-primary-subtle" href="#085871235944" role="button" aria-expanded="false" aria-controls="collapseExample">
+          Telp: {{whatsapp}}
+        </a>
+      </p>
+    </div>
+  {% endblock content %}
+</body>
+</html>
